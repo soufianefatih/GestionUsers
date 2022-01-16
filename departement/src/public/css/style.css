@@ -1,0 +1,7 @@
+.image{
+    background-image: url('../img/b.jpg');
+    width: 400px;
+    height: 100px;
+    /* background-size: 100px 50px; */
+    background-repeat: no-repeat;
+}
