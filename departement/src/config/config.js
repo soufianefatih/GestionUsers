@@ -1,17 +1,17 @@
-const env = require('./env');
+const dtabase = require('./database');
 
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize(env.database, env.username, env.password,{
+const sequelize = new Sequelize(dtabase.database, dtabase.username, dtabase.password,{
 
-    host: env.host,
-    dialect: env.dialect,
+    host: dtabase.host,
+    dialect: dtabase.dialect,
     operatorsAliases: false,
    
     pool: {
-      max: env.max,
-      min: env.pool.min,
-      acquire: env.pool.acquire,
-      idle: env.pool.idle
+      max: dtabase.max,
+      min: dtabase.pool.min,
+      acquire: dtabase.pool.acquire,
+      idle: dtabase.pool.idle
     }
 
 } );

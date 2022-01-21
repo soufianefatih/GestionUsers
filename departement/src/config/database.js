@@ -1,6 +1,6 @@
 
-const env = {
-    database: 'departement',
+const database = {
+    database: 'gestionusers',
     username: 'root',
     password: "",
     host: 'localhost',
@@ -13,4 +13,4 @@ const env = {
     }
   };
   
-  module.exports = env;
+  module.exports = database;

@@ -14,6 +14,8 @@ module.exports = function (app){
 
 // get ALL departement
   app.get('/api/departements', departements.getAllDepartement); 
+
+  
   
   
   // edit departement
@@ -29,6 +31,7 @@ module.exports = function (app){
   // user route
   app.post('/api/users',users.createUser);
   app.get('/api/users',users.getAllUsers);
+  // departement user
   app.get('/', departements.AllDepartement);
   // delete user
   app.get('/api/users/delete/:userId',users.deleteUser);

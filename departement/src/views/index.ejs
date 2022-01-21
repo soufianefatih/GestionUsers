@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/"><i class="fas fa-home"></i>  Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/api/departements">All Departements</a>
+              <a class="nav-link" href="/api/departements"><i class="fas fa-house-damage"></i> All Departements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/api/users">Users</a>
+              <a class="nav-link" href="/api/users"><i class="fas fa-users"></i> Users</a>
             </li>
           
           </ul>
@@ -37,11 +37,13 @@
       </nav>
 
       <div class="container">
-          <img src="/img/a.jpg" alt="" width="100%" height="200px">
-        <h1 class="text-center p-5 mr-5">Gestion Users</h1>
+          <!-- <img src="../public/img/a.png" alt="" width="100%" height="200px"> -->
+        <h1 class="text-center p-3 mr-5 mt-5">Gestion Users</h1>
+
+        <p class="text-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi illo inventore deleniti dolorum, accusamus voluptates, quibusdam numquam sit vitae provident, eum non deserunt dicta. Error, culpa! Omnis, officia debitis.</p>
         <div  class="row ">
             <div class="col-md-4 m-auto ">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">ADD Departements</button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">ADD Departements</button>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@fat">ADD Users</button>
 
             </div>
@@ -60,13 +62,13 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New Departement</h5>
+      <div class="modal-header ">
+        <h5 class="modal-title" id="exampleModalLabel"> <i class="fas fa-home"></i> New Departement</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body ">
         <form method="POST" action="/api/departements"> 
           <div class="form-group">
             <label for="recipient-name" class="col-form-label">Title:</label>
@@ -76,8 +78,8 @@
             <label for="message-text" class="col-form-label">Description:</label>
             <textarea class="form-control" id="message-text " name="description" id="name"></textarea>
           </div>
-          <button type="submit" class="btn btn-danger border-dark text-white" class="form-control" >Valider</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success border-dark text-white" class="form-control" >Valider</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </form>
       </div>
     
@@ -90,16 +92,16 @@
 
 <!-- modal Users////////////////////// -->
 
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabe1">New User</h5>
+        <div class="modal-header ">
+          <h5 class="modal-title " id="exampleModalLabe1"<i class="fas fa-users"><i class="fas fa-users"></i> New User</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body ">
             <form method="POST" action="/api/users"> 
                 <div class="form-group">
                   <label for="recipient-name" class="col-form-label">Name:</label>
@@ -119,15 +121,15 @@
                     <select class="form-control" id="recipient-name"  name="departement_id" class="" >
                     
                     <% departements.forEach(element => { %>
-                      <option  value="<%= element.id %>"><%= element.id %><%= element.title %></option>
+                      <option  value="<%= element.id %>"><%= element.id %> <%= element.title %></option>
                     <% }) %>
                     
                 </select>
               </div>
                 
               
-                <button type="submit" class="btn btn-danger border-dark text-white" class="form-control" >Valider</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-success border-dark text-white" class="form-control" >Valider</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
               </form>
         </div>
        
@@ -135,6 +137,45 @@
     </div>
   </div>
 <!-- modal///////// -->
+
+
+
+
+
+
+
+    
+<style>
+
+  body {
+    background-color: lightblue;
+  }
+
+  .modal-body{
+
+    background-color: lightblue;
+  }
+
+  h1{
+
+    font-size: 70px;
+  }
+
+
+  P{
+
+
+font-size: 20px;    
+  }
+
+ 
+  
+  
+  
+  
+  </style>
+  
+  
       
 
     <!-- Optional JavaScript -->

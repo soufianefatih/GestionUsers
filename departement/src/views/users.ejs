@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/"><i class="fas fa-home"></i>  Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/api/departements">All Departements</a>
+              <a class="nav-link" href="/api/departements"><i class="fas fa-house-damage"></i> All Departements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/api/users">Users</a>
+              <a class="nav-link" href="/api/users"><i class="fas fa-users"></i> Users</a>
             </li>
            
           </ul>
@@ -37,11 +37,16 @@
       </nav>
 
       <section id="gigs" class="container">
-        <h1 class="p-4">All Users</h1>
+        <div class="modal-header mt-5  col-md-5">
+          <h3 class="modal-title" id="exampleModalLabel"> <i class="fas fa-users"></i> ALL Users </h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
     
      
       
-      <table class="table">
+      <table class="table table-bordered mt-3">
         <thead class="thead-dark">
           <tr>
             <th scope="col">#</th>
@@ -76,6 +81,31 @@
      
         
       </section>
+
+
+
+
+      <style>
+
+        body {
+          background-color: lightblue;
+        }
+        
+        .table{
+        
+          background-color: rgb(255, 248, 248);
+        }
+        
+        .modal-header{
+
+/* color: aliceblue; */
+          background-color: aliceblue;
+        }
+
+        
+        
+        </style>
+        
      
 
     <!-- Optional JavaScript -->

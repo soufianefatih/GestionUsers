@@ -1,11 +1,10 @@
 const { users } = require('../config/config');
 
 const db = require('../config/config');
-const env = require('../config/env');
+// const env = require('../config/database');
 
 
 const User = db.users;
-const Departement = db.departements;
 
 //  create user
 

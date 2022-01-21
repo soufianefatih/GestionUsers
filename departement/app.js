@@ -28,8 +28,6 @@ app.set("views", "src/views");
 // static folder
 app.use( express.static( "public" ) );
 
-
-
 // PORT 
 const PORT = process.env.PORT || 5500;
 
